@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/feather.css">
+    <link rel="stylesheet" href="css/globalStyle.min.css">
+
+    <title>photographes</title>
+</head>
+<body>
+    <div class="container is-light">
+        <nav class="navbar is-success" role="navigation" aria-label="dropdown navigation">
+                <div class="navbar-brand">
+                  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id="burger">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
+                </div>
+            <div id="menu"  class="navbar-menu">
+                <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Pays
+              </a>
+              <div class="navbar-dropdown">
+                    <a class="button is-light navbar-item" onclick="filterByCountry('Espagne')">
+                    Espagne
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="button is-light navbar-item" onclick="filterByCountry('France')">
+                    France
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="button is-light navbar-item" onclick="filterByCountry('Italie')">
+                        Italie
+                    </a>
+              </div>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Ville
+                </a>
+                <div class="navbar-dropdown">
+                      <a class="button is-light navbar-item" onclick="filterByTown('Barcelone')">
+                            Barcelone
+                      </a>
+                      <hr class="navbar-divider">
+                      <a class="button is-light navbar-item" onclick="filterByTown('Lyon')">
+                            Lyon
+                      </a>
+                      <hr class="navbar-divider">
+                      <a class="button is-light navbar-item" onclick="filterByTown('Madrid')">
+                          Madrid 
+                      </a>
+                      <hr class="navbar-divider">
+                      <a class="button is-light navbar-item" onclick="filterByTown('Milan')">
+                          Milan  
+                      </a>
+                      <hr class="navbar-divider">
+                      <a class="button is-light navbar-item" onclick="filterByTown('Paris')">
+                          Paris  
+                      </a>
+                      <hr class="navbar-divider">
+                      <a class="button is-light navbar-item" onclick="filterByTown('Rome')">
+                          Rome 
+                      </a>
+                      <hr class="navbar-divider">
+                      <a class="button is-light navbar-item" onclick="filterByTown('Turin')">
+                          Turin  
+                      </a>
+                      <hr class="navbar-divider">
+                      <a class="button is-light navbar-item" onclick="filterByTown('Valence')">
+                          Valence  
+                      </a>
+                </div>
+              </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Filtrer par Tags
+                </a>
+            
+                <div class="navbar-dropdown">
+                      <a class="button is-light navbar-item" onclick="filterByTag('Art')">
+                        #Art
+                      </a>
+                      <hr class="navbar-divider">
+                      <a class="button is-light navbar-item" onclick="filterByTag('Culture')">
+                        #Culture
+                      </a>
+                      <hr class="navbar-divider">
+                      <a class="button is-light navbar-item" onclick="filterByTag('Economie')">
+                        #Economie
+                      </a>
+                      <hr class="navbar-divider">
+                      <a class="button is-light navbar-item" onclick="filterByTag('Exotic')">
+                        #Exotic
+                      </a>
+                      <hr class="navbar-divider">
+                      <a class="button is-light navbar-item" onclick="filterByTag('Finance')">
+                        #Finance
+                      </a>
+                      <hr class="navbar-divider">
+                      <a class="button is-light navbar-item" onclick="filterByTag('Sport')">
+                        #Sport
+                      </a>
+                </div>
+              </div>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Filter par prix
+                </a>
+                <div class="navbar-dropdown">
+                      <a class="button is-light navbar-item" onclick="filterByPrice(400)">
+                            400&#x20AC;/jour
+                      </a>
+                      <hr class="navbar-divider">
+                      <a class="button is-light navbar-item"  onclick="filterByPrice(500)">
+                            500&#x20AC;/jour
+                      </a>
+                      <hr class="navbar-divider">
+                      <a class="button is-light navbar-item"  onclick="filterByPrice(800)">
+                            800&#x20AC;/jour
+                      </a>
+
+                      <hr class="navbar-divider">
+                      <a class="button is-light navbar-item"  onclick="filterByPrice(1000)">
+                            1000&#x20AC;/jour
+                      </a>
+                </div>
+              </div>              
+            </div>
+        </nav>
+        <section id="root" class="section">
+            
+        </section>
+    </div>
+    <script src="js/helpers.js"></script>
+    <script src="js/createScript.js"></script>
+</body>
+</html>
